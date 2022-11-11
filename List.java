@@ -46,6 +46,27 @@ public interface List<T> {
 	 *         is less than 0 or greater than the number of elements
 	 */
 	void insertAt (int position, T val) throws InvalidPositionException;
+
+	/*
+	 * Purpose: remove the specified item while keeping the order of th list
+	 * Parameters: String item - the string value of the item that you want 
+	 * 			   to be removed from the list
+	 * Returns: T - The Data of the node
+	 */
+	T removeItem(String item);
+
+	/*
+	 * Purpose: to check if the list is empty
+	 * Parameters: none
+	 * Returns: true if the list is empty and false if the list is not empty
+	 */
+	boolean isEmpty();
+
+	/* Purpose: to get the head of the list
+	 * Parameters: none
+	 * Returns: Node<T> - the head of the list
+	 */
+	Node<T> getHead ();
     
 }
 
